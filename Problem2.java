@@ -41,7 +41,7 @@ public class Problem2 {
         String c;
         c = template;
         m = String.format("MMMMMMM                MMMMMMM");
-        c = String.format("   CCCCCCCCCCCCCCCCCCCCCCCCCCC");
+        c = String.format("   CCCCCCCCCCCCCCCCCCCCCCCCC  ");
         return new Initial(m, c);
     }
 
@@ -63,6 +63,17 @@ public class Problem2 {
         String c;
         c = template;
         m = String.format("MMM   MMM            MMM   MMM");
+        c = String.format("CCCCCC                        ");
+        return new Initial(m, c);
+    }
+
+    public Initial formatFifthRow()
+    {
+        String template = "%0" + WIDTH_OF_TEXT + "d";
+        String m; 
+        String c;
+        c = template;
+        m = String.format("MMM   MMM            MMM   MMM");
         c = String.format("CCCC                          ");
         return new Initial(m, c);
     }
@@ -75,6 +86,28 @@ public class Problem2 {
         c = template;
         m = String.format("MMM    MMM          MMM    MMM");
         c = String.format("CCCC                          ");
+        return new Initial(m, c);
+    }
+
+    public Initial formatSeventhRow()
+    {
+        String template = "%0" + WIDTH_OF_TEXT + "d";
+        String m; 
+        String c;
+        c = template;
+        m = String.format("MMM    MMM          MMM    MMM");
+        c = String.format("CCCC                          ");
+        return new Initial(m, c);
+    }
+
+    public Initial formatEighthRow()
+    {
+        String template = "%0" + WIDTH_OF_TEXT + "d";
+        String m; 
+        String c;
+        c = template;
+        m = String.format("MMM    MMM          MMM    MMM");
+        c = String.format("CCCCCC                        ");
         return new Initial(m, c);
     }
 
@@ -96,7 +129,7 @@ public class Problem2 {
         String c;
         c = template;
         m = String.format("MMM       MMM    MMM       MMM");
-        c = String.format("   CCCCCCCCCCCCCCCCCCCCCCCCCCC");
+        c = String.format("   CCCCCCCCCCCCCCCCCCCCCCCCC  ");
         return new Initial(m, c);
     }
 
@@ -121,10 +154,16 @@ public class Problem2 {
             initial = formatSecondRow(); 
         } else if (numRow == 3) {
             initial = formatThirdRow(); 
-        } else if (numRow == 4 || numRow == 5) {
+        } else if (numRow == 4) {
             initial = formatFourthRow(); 
-        } else if (numRow == 6 || numRow == 7) {
+        } else if (numRow == 5) {
+            initial = formatFifthRow(); 
+        } else if (numRow == 6) {
             initial = formatSixthRow(); 
+        } else if (numRow == 7) {
+            initial = formatSeventhRow(); 
+        } else if (numRow == 8) {
+            initial = formatEighthRow(); 
         } else if (numRow == 9) {
             initial = formatNinthRow(); 
         } else if (numRow == 10) {
