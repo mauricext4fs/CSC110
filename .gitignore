@@ -1,0 +1,13 @@
+*.class
+*.log
+*.ctxt
+.mjt.tmp/
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+*.swp
+*.swo
