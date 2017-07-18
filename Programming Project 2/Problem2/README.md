@@ -1,2 +1,10 @@
-# No docker here... this is using Swing and you need to run that with a Window Manager
-javac Problem2.java && jar -cf Problem2.jar * && java -cp Problem2.jar Problem2
+## Problem 2
+
+This Problem use Swing. So you would need a Display Manager 
+to run it.
+
+### Build and Run
+```shell
+javac Problem2.java && java Problem2
+```
+
