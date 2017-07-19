@@ -6,5 +6,5 @@ advance Reflection.
 
 ## Build Command
 ```shell
-javac Problem3.java && java Problem3
+javac Problem4.java && java Problem4
 ```
