@@ -17,14 +17,10 @@ public class Problem2 {
         System.out.printf("\t%s\t\t%s\n", initial.m, initial.c);
     }
 
-    /**
-     * @deprecated
-     *
-     */
     public Initial formatFirstRow()
     {
         String template = "%0" + WIDTH_OF_TEXT + "d";
-        String m; 
+        String m;
         String c;
         m = template;
         c = template;
